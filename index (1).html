@@ -1,0 +1,390 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Restaurant Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a class="flex items-center py-4 px-2" href="#">
+                            <img alt="Restaurant logo, a stylized fork and knife crossed over a plate" class="h-8 w-8 mr-2" height="50" src="https://storage.googleapis.com/a1aa/image/uJropi5N20ZNPdtWq0qVpfKecxbN8il1zwodP4l2ygQi3EenA.jpg" width="50"/>
+                            <span class="font-semibold text-gray-500 text-lg">Restaurant Name</span>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300" href="#menu">Menu</a>
+                        <a class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300" href="#location">Location</a>
+                        <a class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300" href="#contact">Contact</a>
+                        <a class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300" href="#reviews">Reviews</a>
+                        <a class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300" href="#features">Features</a>
+                    </div>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="hidden mobile-menu">
+        <ul class="">
+            <li><a class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold" href="#menu">Menu</a></li>
+            <li><a class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300" href="#location">Location</a></li>
+            <li><a class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300" href="#contact">Contact</a></li>
+            <li><a class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300" href="#reviews">Reviews</a></li>
+            <li><a class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300" href="#features">Features</a></li>
+        </ul>
+    </div>
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-screen" style="background-image: url('krishnaveg.png');">
+        <div class="flex items-center justify-center h-full bg-gray-900 bg-opacity-50">
+            <div class="text-center">
+                <h1 class="text-white text-5xl font-bold">Welcome to Our Restaurant</h1>
+                <p class="text-white text-xl mt-4">Experience the best dining experience</p>
+            </div>
+        </div>
+    </section>
+    <!-- Menu Section -->
+    <section class="py-20 bg-white" id="menu">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800">Our Menu</h2>
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <img alt="A delicious plate of pasta with tomato sauce and basil" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/vgNZSZovkobsFRE7y17xqNtbMKM7po7r4gEcviQwcHZzNhfJA.jpg" width="300"/>
+                    <h3 class="text-xl font-semibold mt-4">Pasta</h3>
+                    <p class="mt-2 text-gray-600">Delicious pasta with tomato sauce and fresh basil.</p>
+                    <p class="mt-2 text-green-500 font-bold">$12.99</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <img alt="A juicy steak cooked to perfection with a side of vegetables" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/iwsIWYDH0rbbLxGcQScheDjXkcEYbgiI8MeX8ooJUzQV3EenA.jpg" width="300"/>
+                    <h3 class="text-xl font-semibold mt-4">Steak</h3>
+                    <p class="mt-2 text-gray-600">Juicy steak cooked to perfection with a side of vegetables.</p>
+                    <p class="mt-2 text-green-500 font-bold">$24.99</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <img alt="A fresh garden salad with a variety of vegetables and a light dressing" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/wuo0txmhGtoWH5c2WktiKZsfPJ58E4UlaoEgCFBFg88nbCfTA.jpg" width="300"/>
+                    <h3 class="text-xl font-semibold mt-4">Garden Salad</h3>
+                    <p class="mt-2 text-gray-600">Fresh garden salad with a variety of vegetables and a light dressing.</p>
+                    <p class="mt-2 text-green-500 font-bold">$8.99</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <img alt="A bowl of creamy tomato soup garnished with basil" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/fl64S1SSeapwm08SRZ59AkJ5PLDuKMcaBMWwE328eadedT4PB.jpg" width="300"/>
+                    <h3 class="text-xl font-semibold mt-4">Tomato Soup</h3>
+                    <p class="mt-2 text-gray-600">Creamy tomato soup garnished with fresh basil.</p>
+                    <p class="mt-2 text-green-500 font-bold">$6.99</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <img alt="A plate of sushi rolls with various fillings and a side of soy sauce" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/CGsDC9ofAYUJWiVemPuq9aM7PcfARk9nI7cTI4SEoNjsuJ8nA.jpg" width="300"/>
+                    <h3 class="text-xl font-semibold mt-4">Sushi</h3>
+                    <p class="mt-2 text-gray-600">A variety of sushi rolls with fresh ingredients.</p>
+                    <p class="mt-2 text-green-500 font-bold">$14.99</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <img alt="A slice of rich chocolate cake with a drizzle of chocolate sauce" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/FyestpwXwXzOBK64LL87VUMkaHkC2D33vT13qAejTvKY3EenA.jpg" width="300"/>
+                    <h3 class="text-xl font-semibold mt-4">Chocolate Cake</h3>
+                    <p class="mt-2 text-gray-600">Rich chocolate cake with a drizzle of chocolate sauce.</p>
+                    <p class="mt-2 text-green-500 font-bold">$5.99</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Location Section -->
+    <section class="py-20 bg-gray-100" id="location">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800">Our Location</h2>
+            <div class="mt-10 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2">
+                    <a href="https://maps.app.goo.gl/J4td7prxkTrXXUMTA">
+                        <img alt="Map showing the location of the restaurant" class="w-full h-64 object-cover rounded-lg" height="400" src="https://storage.googleapis.com/a1aa/image/le8jQe1B6tnjNksc6HuObLErYZI6DXNVNIL3Tu8nxhIa3EenA.jpg" width="600">
+                    </a>
+                </div>
+                <div class="md:w-1/2 md:ml-10 mt-6 md:mt-0">
+                    <h3 class="text-2xl font-semibold">Visit Us</h3>
+                    <p class="mt-4 text-gray-600">1234 Restaurant St, Food City, FC 56789</p>
+                    <p class="mt-2 text-gray-600">Phone: (123) 456-7890</p>
+                    <p class="mt-2 text-gray-600">Email: info@restaurant.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Features Section -->
+<section class="py-20 bg-gray-100" id="features">
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center text-gray-800">Features and Amenities</h2>
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Accessibility -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold">Accessibility</h3>
+                <ul class="mt-2 text-gray-600">
+                    <li>✔ Wheelchair-accessible toilet</li>
+                    <li>✔ Wheelchair-accessible car park</li>
+                    <li>✔ Wheelchair-accessible entrance</li>
+                    <li>✔ Wheelchair-accessible seating</li>
+                </ul>
+            </div>
+            <!-- Service Options -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold">Service Options</h3>
+                <ul class="mt-2 text-gray-600">
+                    <li>✔ Outdoor seating</li>
+                    <li>✔ No-contact delivery</li>
+                    <li>✔ Delivery</li>
+                    <li>✔ Takeaway</li>
+                    <li>✔ Dine-in</li>
+                </ul>
+            </div>
+            <!-- Offerings -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold">Offerings</h3>
+                <ul class="mt-2 text-gray-600">
+                    <li>✔ All you can eat</li>
+                    <li>✔ Coffee</li>
+                    <li>✔ Small plates</li>
+                    <li>✔ Vegan options</li>
+                    <li>✔ Vegetarian options</li>
+                    <li>✔ Vegetarian options only</li>
+                    <li>✔ Cuisine</li>
+                    <li>✔ Dishes</li>
+                </ul>
+            </div>
+            <!-- Dining Options -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold">Dining Options</h3>
+                <ul class="mt-2 text-gray-600">
+                    <li>✔ Breakfast</li>
+                    <li>✔ Brunch</li>
+                    <li>✔ Lunch</li>
+                    <li>✔ Dinner</li>
+                    <li>✔ Catering</li>
+                    <li>✔ Dessert</li>
+                    <li>✔ Seating</li>
+                </ul>
+            </div>
+            <!-- Amenities -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold">Amenities</h3>
+                <ul class="mt-2 text-gray-600">
+                    <li>✔ Toilets</li>
+                </ul>
+            </div>
+            <!-- Atmosphere -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold">Atmosphere</h3>
+                <ul class="mt-2 text-gray-600">
+                    <li>✔ Casual</li>
+                    <li>✔ Cosy</li>
+                </ul>
+            </div>
+            <!-- Crowd -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold">Crowd</h3>
+                <ul class="mt-2 text-gray-600">
+                    <li>✔ Groups</li>
+                </ul>
+            </div>
+            <!-- Planning -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold">Planning</h3>
+                <ul class="mt-2 text-gray-600">
+                    <li>✔ Accepts reservations</li>
+                </ul>
+            </div>
+            <!-- Payments -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold">Payments</h3>
+                <ul class="mt-2 text-gray-600">
+                    <li>✔ Credit cards</li>
+                    <li>✔ Debit cards</li>
+                    <li>✔ Mobile Wallets</li>
+                </ul>
+            </div>
+            <!-- Children -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold">Children</h3>
+                <ul class="mt-2 text-gray-600">
+                    <li>✔ Good for kids</li>
+                    <li>✔ Good for kids' birthday</li>
+                    <li>✔ Kids' menu</li>
+                </ul>
+            </div>
+            <!-- Parking -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold">Parking</h3>
+                <ul class="mt-2 text-gray-600">
+                    <li>✔ Free parking lot</li>
+                    <li>✔ Free street parking</li>
+                    <li>✔ Plenty of parking available</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Reviews Section -->
+<section class="py-20 bg-white" id="reviews">
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center text-gray-800">Customer Reviews</h2>
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <div class="flex items-center">
+                    <img alt="Profile picture of a satisfied customer" class="w-12 h-12 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/zXJbNbgvwmrZF1dfM0L2lupbnMHSNFlUfyO5GWMaWUQd3EenA.jpg" width="50"/>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-semibold">John Doe</h3>
+                        <p class="text-gray-600">5 stars</p>
+                    </div>
+                </div>
+                <p class="mt-4 text-gray-600">The food was amazing and the service was excellent. Highly recommend!</p>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <div class="flex items-center">
+                    <img alt="Profile picture of a happy customer" class="w-12 h-12 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/TxAsUanU8fze9EypaVjk2vfi9URimEoRXjFT9DfCnTiHdT4PB.jpg" width="50"/>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-semibold">Jane Smith</h3>
+                        <p class="text-gray-600">4 stars</p>
+                    </div>
+                </div>
+                <p class="mt-4 text-gray-600">Great atmosphere and delicious food. Will definitely come back!</p>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <div class="flex items-center">
+                    <img alt="Profile picture of a delighted customer" class="w-12 h-12 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/faanBKAqfPrmlUfzFtrIASyF6MS2dnbPqcXVeCEewBFL8mwfE.jpg" width="50"/>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-semibold">Michael Brown</h3>
+                        <p class="text-gray-600">5 stars</p>
+                    </div>
+                </div>
+                <p class="mt-4 text-gray-600">Best dining experience I've had in a long time. The staff was very friendly.</p>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <div class="flex items-center">
+                    <img alt="Profile picture of a pleased customer" class="w-12 h-12 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/JprB1VO0c047Dt2AQ7n4ymgkFhKQ0D6x6U8eXPsdFMHubCfTA.jpg" width="50"/>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-semibold">Emily Davis</h3>
+                        <p class="text-gray-600">4 stars</p>
+                    </div>
+                </div>
+                <p class="mt-4 text-gray-600">Lovely place with great food. The desserts were especially good.</p>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <div class="flex items-center">
+                    <img alt="Profile picture of a content customer" class="w-12 h-12 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/vUMgfiHGsqTOJa77YyWwU5hWYbZcvpML0XffOHhUAK2muJ8nA.jpg" width="50"/>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-semibold">Chris Johnson</h3>
+                        <p class="text-gray-600">5 stars</p>
+                    </div>
+                </div>
+                <p class="mt-4 text-gray-600">Amazing food and great service. Will definitely recommend to friends and family.</p>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <div class="flex items-center">
+                    <img alt="Profile picture of a satisfied customer" class="w-12 h-12 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/zXJbNbgvwmrZF1dfM0L2lupbnMHSNFlUfyO5GWMaWUQd3EenA.jpg" width="50"/>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-semibold">Sarah Wilson</h3>
+                        <p class="text-gray-600">4 stars</p>
+                    </div>
+                </div>
+                <p class="mt-4 text-gray-600">Great place for a family dinner. The kids loved the food too!</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Section -->
+<section class="py-20 bg-gray-100" id="contact">
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center text-gray-800">Contact Us</h2>
+        <div class="mt-10">
+            <form
+                class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg"
+                action="https://formspree.io/f/xannqlvq"
+                method="POST"
+            >
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="contact-name">Name</label>
+                    <input
+                        class="w-full px-3 py-2 border rounded-lg"
+                        id="contact-name"
+                        name="name"
+                        placeholder="Your Name"
+                        type="text"
+                        required
+                    />
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="contact-email">Email</label>
+                    <input
+                        class="w-full px-3 py-2 border rounded-lg"
+                        id="contact-email"
+                        name="email"
+                        placeholder="Your Email"
+                        type="email"
+                        required
+                    />
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="contact-message">Message</label>
+                    <textarea
+                        class="w-full px-3 py-2 border rounded-lg"
+                        id="contact-message"
+                        name="message"
+                        placeholder="Your Message"
+                        rows="4"
+                        required
+                    ></textarea>
+                </div>
+                <button 
+                    class="w-full bg-green-500 text-white py-2 px-4 rounded-lg font-bold" 
+                    type="submit"
+                >
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 py-6">
+    <div class="max-w-6xl mx-auto px-4">
+     <div class="flex justify-between items-center">
+      <div class="text-white">
+       <h3 class="text-lg font-semibold">
+        Restaurant Name
+       </h3>
+       <p class="mt-2 text-gray-400">
+        1234 Restaurant St, Food City, FC 56789
+       </p>
+       <p class="mt-2 text-gray-400">
+        Phone: (123) 456-7890
+       </p>
+       <p class="mt-2 text-gray-400">
+        Email: info@restaurant.com
+       </p>
+      </div>
+      <div class="text-white">
+       <h3 class="text-lg font-semibold">
+        Follow Us
+       </h3>
+       <div class="mt-2 flex space-x-4">
+
+       </div>
+      </div>
+     </div>
+    </div>
+   </footer>
+  </body>
+</html>
